@@ -8,7 +8,6 @@ Single Node Openstack Kilo :
   Operating System : Ubuntu14.04 LTS
 
   NIC's::
-
     Eth0: Public Network/Management Network
     Eth1: Data Network
 
@@ -17,8 +16,6 @@ Download the openstack-kilo-script::
   sudo -i # Scripts need Root user privileges
   git clone https://github.com/romilgupta/openstack-kilo-script.git
   cd openstack-kilo-script
-  
-Run ``python install_openstack.py``
 
 Script will prompt you to enter following inputs::
 
