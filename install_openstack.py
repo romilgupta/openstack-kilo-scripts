@@ -403,8 +403,8 @@ def install_and_configure_neutron():
     add_to_conf(neutron_plugin_conf, "ml2_type_vlan", "network_vlan_ranges", "physnet1:1:4094")
     add_to_conf(neutron_plugin_conf, "ml2_type_vxlan", "vni_ranges", "1:5000")
     add_to_conf(neutron_plugin_conf, "securitygroup", "firewall_driver", "neutron.agent.linux.iptables_firewall.OVSHybridIptablesFirewallDriver")
-    add_to_conf(neutron_plugin_conf, "ovs", "local_ip", % ip_address_data)
-    add_to_conf(neutron_plugin_conf, "agent", "l2_population", True)
+    add_to_conf(neutron_plugin_conf, "ovs", "local_ip", ip_address_data)
+    add_to_conf(neutron_plugin_conf, "agent", "l2_population", "True")
     add_to_conf(neutron_plugin_conf, "agent", "tunnel_types", "vxlan")
 
     add_to_conf(neutron_dhcp_ini, "DEFAULT", "interface_driver", "neutron.agent.linux.interface.OVSInterfaceDriver")
