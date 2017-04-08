@@ -15,7 +15,7 @@ Single Node Openstack Kilo :
 Download the openstack-kilo-script::
 
   sudo -i # Scripts need Root user privileges
-  git clone https://github.com/romilgupta/openstack-kilo-script.git
+  git clone https://github.com/romilgupta/openstack-kilo-scripts.git
   cd openstack-kilo-script
   
 Run ``python install_openstack.py``
